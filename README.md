@@ -3,6 +3,8 @@
 ## Problem statement
 ### Virtual Brake Pressure Sensor
 
+![pressure_sensor](https://github.com/user-attachments/assets/ea5e9267-5704-428b-9594-7357a910f345)
+
 A virtual sensor is a software-based model of a physical sensor that can simulate its behavior and generate sensor readings without the need for actual physical hardware.
 
 Safety functions like braking rely heavily on accurate sensor data. The failure of a sensor failure leads to degradation or non-availability of safety features. In such a scenario, a virtual sensor could provide a degree of redundancy. A very accurate virtual sensor could even save hardware costs.
@@ -18,7 +20,9 @@ Ensemble Learning: Combines XGBoost predictions as an input feature for the ANN 
 Delay Matrix Features: Introduces delayed versions of input features to account for temporal relationships in the data.
 Data Scaling: Ensures all features are standardized for optimal performance during training.
 Cross-Validation: Implements fold-based evaluation to validate model performance across different subsets of data.
-### Pipeline Overview
+### Pipeline Overview  
+![design](https://github.com/user-attachments/assets/5abc0c76-036e-4e2c-8081-a0cc225f2f0f)
+
   1. GPU Configuration
 The script configures GPUs for training to optimize performance. It uses TensorFlow's set_memory_growth to manage GPU memory allocation dynamically.
 
